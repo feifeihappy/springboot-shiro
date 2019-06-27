@@ -1,0 +1,25 @@
+#公共配置
+spring:
+  # http请求文件大小限制
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 300MB
+  #      context-path: /command-web
+  datasource:
+    url: jdbc:mysql://47.244.230.185:3306/shiro?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.example.shiro.dao
+
+
+server:
+  port: 8081

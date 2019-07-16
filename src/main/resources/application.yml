@@ -1,6 +1,6 @@
-#公共配置
+#鍏叡閰嶇疆
 spring:
-  # http请求文件大小限制
+  # http璇锋眰鏂囦欢澶у皬闄愬埗
   servlet:
     multipart:
       max-file-size: 100MB
@@ -22,4 +22,4 @@ mybatis:
 
 
 server:
-  port: 8081
+  port: 8082
